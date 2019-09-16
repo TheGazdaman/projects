@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+
+}
+
+body {
+  margin: 0;
+  background: #1a1a1a;
+  color: #fff;
+  
+}
+
+.container {
+  width: 90em;
+  margin: 0 auto;
+  padding: 3rem 0rem 6rem 0rem;
+}
+
+header {
+  height: 80px;
+}
+.logo {
+  position: absolute;
+  color: #fff;
+  font-size: 4em;
+  font-weight: bolder;
+  margin-top: -30px;
+  margin-left: 100px;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  display: inline;
+  padding: 0 1rem;
+  margin-right: 150px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 2rem;
+}
+
+.uvod {
+  height: 500px;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url('img/office.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100%;
+}
+
+.moto {
+  display: flex;
+  height: 300px;
+  width: 900px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  font-size: 2rem;
+}
+
+em {
+  border-bottom: 4px solid #1a1a1a;
+  font-style: normal;
+  color: #e1a87a;
+}
+
+.intro {
+  display: flex;
+  height: 500px;
+  margin-left: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.coding {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  padding-top: 30px;
+  
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.passion {
+  width: 100%;
+  padding-right: 350px;  
+}
+
+.btn {
+  border: 2px solid #f0f0f0;
+  margin-top: 40px;
+  padding: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  border-radius: 5px;
+  color: #777;
+}
+
+.work {
+  display: flex;
+  height: 800px;
+  width: 100%;
+  background-color: #f0f0f0;
+  justify-content: center;
+  
+}
+
+.mrizka1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 10px;
+} 
+.mrizka2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 10px;
+} 
+
+.mrizka3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+  
+.tabul {
+  width: 300px;
+  height: 200px;
+
+/*   box-shadow: 4px 4px 3px #1a1a1a;
+ */  
+  color: #1a1a1a;
+
+  transition: transform .2s;
+}
+
+.tabul:hover {
+  transform: scale(1.05);
+}
+
+.tabul1 {
+  background-image: url('img/basketball.png');
+}
+
+.tabul2 {
+  background-image: url('img/cafe.png');
+}
+.tabul3 {
+  background-image: url('img/hotel.png');
+}
+
+.tabul4 {
+  background-image: url('img/climb.png');
+}
+
+.tabul5 {
+  background-image: url('img/terasa.png');
+}
+
+.tabul6 {
+  background-image: url('img/train.png');
+}
+
+.tabul7 {
+  background-image: url('img/fit.png');
+}
+
+.tabul8 {
+  background-image: url('img/boat.png');
+}
+
+.tabul9 {
+  background-image: url('img/golf.png');
+}
+ /*-----Resume----*/
+
+.resume {
+  display: flex;
+  min-height: 20rem;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.day-to-day {
+  display: flex;
+  flex-direction: column;
+  
+  background-color: #1a1a1a;
+   
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  
+  background-color: #1a1a1a;
+
+}
+
+/* -----Contact--- */
+
+.contact-form {
+  display: flex;
+  min-height: 20rem;
+  background-color: #f0f0f0;
+}
+
+ /*-----Footer---*/
+
+.footer-header {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+
+}
+
+.footer-nav a {
+  text-align: center;
+  color: #fff;
+  text-decoration: none; 
+}
+
+footer p {
+  text-align: center;
+  margin-top: 40px;
+  color: #7A7D7F;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.social i {
+  text-decoration: none;
+  margin: 40px; 
+  text-align: center;
+  color: #fff;
+}
+
+.social .fa {
+  height: 25px;
+  width: 25px;
+  color: #1a1a1a;
+  background: #fff;
+  padding: 4px;
+  border-radius: 50%;
+}
+  
+
+
+
+  /* 
+  padding: 0 1rem;
+  
+  
+  line-height: 2rem;
+
+  
+  display: inline;
+  margin-right: 220px;
+  
+ */
