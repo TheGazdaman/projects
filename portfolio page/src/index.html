@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+ 
+ 
   <title>.gazdik</title>
 </head>
 <body>
@@ -16,10 +17,10 @@
     <header>
       <div class="logo">.gazdik</div>
       <nav>
-        <a href="about">about</a>
-        <a href="work">work</a>
-        <a href="news">news</a>
-        <a href="contact">contact</a>
+        <a href="#about">about</a>
+        <a href="#work">work</a>
+        <a href="#skills">skills</a>
+        <a href="#contact">contact</a>
       </nav>
     </header>
 
@@ -27,12 +28,12 @@
     <div class="moto">
       <p>.gazdik is a creative studio. <br>
       We believe in the power of <br>
-      desing and<em> story telling.</em></p>
+      design and<em> story telling.</em></p>
     </div>
   </div>
 
   
-    <div class="intro">
+    <div id="about">
       <div class="coding"><img src="img/coding.png" alt="php code"></div>
 
       <div class="passion">
@@ -45,7 +46,7 @@
     
    
     
-    <div class="work">
+    <div id="work">
        
       <div class="mrizka1">
         <div class="tabul tabul1"></div>
@@ -68,7 +69,7 @@
   <!-- Resume -->
 
   
-    <div class="resume">
+    <div id="skills">
       
       <div class="day-to-day">
         <ul>
@@ -101,11 +102,38 @@
     </div>
 
     <!-- Contact -->
+    <section id="contact">
+     <form class="contact-form">
+        <div class="form-group"><h1>Contact us</h1></div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control" placeholder="Phone Number">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email ID">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" row="4" placeholder="Message"></textarea>
+          </div>
+          <div class="form-group">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
+      </form> 
 
-    <div class="contact-form">
-      
-    </div>
-
+        <div class="contact-info">
+          <div class="follow"><b>Address</b><i class="fa fa-map-marker"></i> <b>Bořivojova 1059/46, Praha 3, Czech Republic</b></div>
+          <div class="follow"><b>Phone: </b><i class="fa fa-phone"></i><b> +420 734 766 122</b></div>
+          <div class="follow"><b>Email: </b><i class="fa fa-envelope-o"></i> <b>TheGazdaman@gmail.com</b></div>
+          <div class="follow"><b>Get Social: </b>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+          </div>
+        </div>
+     
+    </section>
 
 
 

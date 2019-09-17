@@ -48,7 +48,7 @@ nav a {
 
 .uvod {
   height: 500px;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url('img/office.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url('/img/office.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 100%;
@@ -71,7 +71,7 @@ em {
   color: #e1a87a;
 }
 
-.intro {
+#about {
   display: flex;
   height: 500px;
   margin-left: 300px;
@@ -108,7 +108,7 @@ img {
   color: #777;
 }
 
-.work {
+#work {
   display: flex;
   height: 800px;
   width: 100%;
@@ -153,42 +153,42 @@ img {
 }
 
 .tabul1 {
-  background-image: url('img/basketball.png');
+  background-image: url('/img/basketball.png');
 }
 
 .tabul2 {
-  background-image: url('img/cafe.png');
+  background-image: url('/img/cafe.png');
 }
 .tabul3 {
-  background-image: url('img/hotel.png');
+  background-image: url('/img/hotel.png');
 }
 
 .tabul4 {
-  background-image: url('img/climb.png');
+  background-image: url('/img/climb.png');
 }
 
 .tabul5 {
-  background-image: url('img/terasa.png');
+  background-image: url('/img/terasa.png');
 }
 
 .tabul6 {
-  background-image: url('img/train.png');
+  background-image: url('/img/train.png');
 }
 
 .tabul7 {
-  background-image: url('img/fit.png');
+  background-image: url('/img/fit.png');
 }
 
 .tabul8 {
-  background-image: url('img/boat.png');
+  background-image: url('/img/boat.png');
 }
 
 .tabul9 {
-  background-image: url('img/golf.png');
+  background-image: url('/img/golf.png');
 }
  /*-----Resume----*/
 
-.resume {
+#skills {
   display: flex;
   min-height: 20rem;
   flex-direction: row;
@@ -212,11 +212,64 @@ img {
 
 /* -----Contact--- */
 
-.contact-form {
+section {
   display: flex;
-  min-height: 20rem;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 24rem;
   background-color: #f0f0f0;
 }
+
+.contact-form {
+  margin-right: 10rem; 
+}
+
+.form-group {
+  color: #1a1a1a;
+}
+
+.form-control {
+  display: flex;
+  background: transparent;
+  padding: 1rem;
+	border: none;
+  border-bottom: 2px dashed #e1a87a;
+} 
+
+.btn {
+
+}
+
+.contact-info {
+  padding-top: 3rem;
+}
+
+.follow {  
+  display: flex;
+  color: #1a1a1a;
+  background: transparent;
+  padding: 1rem;
+	border: none;
+  border-bottom: 2px dashed #e1a87a;
+
+  b {
+    margin: 0 1rem 0 1rem;
+  }
+
+  i {
+    margin-left: 1rem;
+    color:#e1a87a;
+  }
+
+  a {
+    list-style: none;
+    display: inline;
+  }
+}
+
+
+
+
 
  /*-----Footer---*/
 
