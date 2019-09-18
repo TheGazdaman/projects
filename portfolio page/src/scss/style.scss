@@ -10,7 +10,6 @@ html {
   font-family: 'Oswald', sans-serif;
   font-size: 16px;
   scroll-behavior: smooth;
-
 }
 
 body {
@@ -23,16 +22,17 @@ body {
 }
 
 header {
-  height: 130px;
+  height: 9rem;
   background-color: $primary_black;
 }
 .logo {
+  display: flex;
   position: absolute;
   color: #fff;
   font-size: 4em;
   font-weight: bolder;
-  margin-top: 15px;
-  margin-left: 100px;
+  margin-top: 1rem;
+  margin-left: 6rem;
 }
 
 nav {
@@ -45,7 +45,7 @@ nav a {
   display: inline;
   padding: 0 1rem;
   
-  margin-right: 150px;
+  margin-right: 9.5rem;
   color: #fff;
   text-decoration: none;
   line-height: 2rem;
@@ -57,12 +57,12 @@ nav a {
 
 .moto {
   display: flex;
-  height: 300px;
-  width: 900px;
+  height: 19rem;
+  width: 56.25rem;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  align-content: stretch;
+  /* align-content: stretch; */
   font-size: 2rem;
 }
 
@@ -122,6 +122,8 @@ img {
   color: rgb(48, 47, 47);;
 }
 
+/* Section for its own */
+
 .nadpis {
   background: rgba(#000, .6);
   font-size: 1.5rem;
@@ -132,12 +134,13 @@ img {
   color: $gray_white;
   padding-top: 15px;
 
+  .nadpis h1 {
+    margin: 0;
+  }
   
 }
 
-.nadpis h1 {
-  margin: 0;
-}
+/* another section of its own */
 
 .discover {
   display: flex;
@@ -148,9 +151,6 @@ img {
   text-align: center;
 }
 
-.head-disc {
-  
-}
 
 .line {
   display: flex;
@@ -184,77 +184,124 @@ img {
   justify-content: center;
   padding-top: 0;
   
-}
-
-.mrizka1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-right: 10px;
-} 
-.mrizka2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-right: 10px;
-} 
-
-.mrizka3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-right: 10px;
-}
+  .mrizka1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+  } 
+  .mrizka2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+  } 
   
-.tabul {
-  width: 300px;
-  height: 200px;
+  .mrizka3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+  }
+    
+  .tabul {
+    width: 300px;
+    height: 200px;
+    color: #1a1a1a;
+    transition: transform .2s;
+    
+      /* transition effect. not necessary */
+     /*  transition: opacity .2s, visibility .2s; */
+    }
+    .tabul:hover {
+      transform: scale(1.1);
+      filter: grayscale(100%);
+      /* filter: blur(4px); */
+      /* filter: sepia(1); */
+  /*       filter: brightness(0.7);
+ */      
+      
+      }
+      
+  }
 
-/*   box-shadow: 4px 4px 3px #1a1a1a;
- */  
-  color: #1a1a1a;
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  
+  visibility: visible;
+  opacity: 1;*/
 
-  transition: transform .2s;
+
+.tabul p {
+  opacity: 0;
+  text-align: center;
+  padding: 5rem;
+  text-justify: auto;
+  color: $primary_black;
+  
 }
 
-.tabul:hover {
-  transform: scale(1.1);
+.tabul p:hover {
+  opacity: 2;  
+  
+  /* color: $primary_black; */
 }
 
 .tabul1 {
   background-image: url('/img/basketball.png');
+  /* text-align: center;
+  padding: 5rem;
+  text-justify: auto;
+  color: $gray_white; */
+  
 }
 
 .tabul2 {
   background-image: url('/img/cafe.png');
+  text-align: center;
 }
 .tabul3 {
   background-image: url('/img/hotel.png');
+  text-align: center;
 }
 
 .tabul4 {
   background-image: url('/img/climb.png');
+  text-align: center;
 }
 
 .tabul5 {
   background-image: url('/img/terasa.png');
+  text-align: center;
 }
 
 .tabul6 {
   background-image: url('/img/train.png');
+  text-align: center;
 }
 
 .tabul7 {
   background-image: url('/img/fit.png');
+  text-align: center;
 }
 
 .tabul8 {
   background-image: url('/img/boat.png');
+  text-align: center;
 }
 
 .tabul9 {
   background-image: url('/img/golf.png');
+  text-align: center;
 }
+
  /*-----Resume----*/
 
 #skills {
@@ -276,18 +323,16 @@ img {
 }
 
 progress[value] {
- 
+  background-color: #eee;
   width: 250px;
   height: 20px;
   display: none;
-  transition: transform .8s;
 }
 
 progress[value]::-webkit-progress-bar {
  
   background-color: #eee;
   border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 li:hover + progress {
   display: inline;
